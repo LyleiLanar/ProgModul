@@ -20,7 +20,7 @@ namespace teglalap
         private void BtnSzamol_Click(object sender, EventArgs e)
         {
             double a = Convert.ToDouble(fldA.Text);
-            double b = Convert.ToDouble(fldB.Text);
+            double b = Convert.ToDouble(fldB.Text);            
 
             double kerület = 2 * (a + b);
             double terület = a * b;
