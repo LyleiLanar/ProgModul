@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.202
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InputOnConsole", "InputOnConsole\InputOnConsole.csproj", "{E5DB4E0A-C573-46B9-96FD-E35D8BC49847}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Teglalap", "Teglalap\Teglalap.csproj", "{8D31DF99-28B4-4FA5-BC7F-D61064E28A75}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E5DB4E0A-C573-46B9-96FD-E35D8BC49847}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E5DB4E0A-C573-46B9-96FD-E35D8BC49847}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E5DB4E0A-C573-46B9-96FD-E35D8BC49847}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E5DB4E0A-C573-46B9-96FD-E35D8BC49847}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D31DF99-28B4-4FA5-BC7F-D61064E28A75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D31DF99-28B4-4FA5-BC7F-D61064E28A75}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D31DF99-28B4-4FA5-BC7F-D61064E28A75}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D31DF99-28B4-4FA5-BC7F-D61064E28A75}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CFDC5DB9-F40E-45AF-A446-C34148F033AA}
+	EndGlobalSection
+EndGlobal
