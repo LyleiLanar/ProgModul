@@ -12,6 +12,7 @@ namespace Test
         {
             Console.WriteLine("Szia, Mama!");
             Console.WriteLine("Szia, Mama2!");
+            Console.WriteLine("Szia, Mama3!");
             Console.ReadLine();
         }
     }
