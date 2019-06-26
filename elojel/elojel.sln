@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.202
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "elojel", "elojel\elojel.csproj", "{913BA99C-5B1B-4F29-92F5-B44B40D37A5E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "értékelés", "értékelés\értékelés.csproj", "{80F03519-3400-4B70-A8D3-53F0EF05874C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{913BA99C-5B1B-4F29-92F5-B44B40D37A5E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{913BA99C-5B1B-4F29-92F5-B44B40D37A5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{913BA99C-5B1B-4F29-92F5-B44B40D37A5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{913BA99C-5B1B-4F29-92F5-B44B40D37A5E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{80F03519-3400-4B70-A8D3-53F0EF05874C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80F03519-3400-4B70-A8D3-53F0EF05874C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80F03519-3400-4B70-A8D3-53F0EF05874C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80F03519-3400-4B70-A8D3-53F0EF05874C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {512BDF19-9791-48F5-ADD6-15B1CD374789}
+	EndGlobalSection
+EndGlobal

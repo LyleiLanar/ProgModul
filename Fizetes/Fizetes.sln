@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.202
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fizetes", "Fizetes\Fizetes.csproj", "{DE9687F5-B4A2-4304-B521-BDD74F4CE629}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Auto", "Auto\Auto.csproj", "{5375C36A-CF71-4334-A9AC-6B24E62C1DBA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DE9687F5-B4A2-4304-B521-BDD74F4CE629}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE9687F5-B4A2-4304-B521-BDD74F4CE629}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE9687F5-B4A2-4304-B521-BDD74F4CE629}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE9687F5-B4A2-4304-B521-BDD74F4CE629}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5375C36A-CF71-4334-A9AC-6B24E62C1DBA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5375C36A-CF71-4334-A9AC-6B24E62C1DBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5375C36A-CF71-4334-A9AC-6B24E62C1DBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5375C36A-CF71-4334-A9AC-6B24E62C1DBA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {ADFC6E3F-DBCE-4F25-99EE-DC65C56A9AC5}
+	EndGlobalSection
+EndGlobal
