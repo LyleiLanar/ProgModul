@@ -13,7 +13,7 @@ namespace értékelés
             Console.Write("Adjunk meg egy számot: ");
             int szam = Convert.ToInt32(Console.ReadLine());
 
-            if (szam < 0)
+            if (szam < 0 || szam >100)
             {
                 Console.WriteLine("Nem értékelhető");
             }

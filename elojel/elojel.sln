@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "elojel", "elojel\elojel.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "értékelés", "értékelés\értékelés.csproj", "{80F03519-3400-4B70-A8D3-53F0EF05874C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KetSzamElojele", "KetSzamElojele\KetSzamElojele.csproj", "{361E13F9-EBAE-4616-9982-02375317986B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HétNapjai", "HétNapjai\HétNapjai.csproj", "{EAEFD577-235B-4258-8F0D-32F531301AC7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{80F03519-3400-4B70-A8D3-53F0EF05874C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{80F03519-3400-4B70-A8D3-53F0EF05874C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{80F03519-3400-4B70-A8D3-53F0EF05874C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{361E13F9-EBAE-4616-9982-02375317986B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{361E13F9-EBAE-4616-9982-02375317986B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{361E13F9-EBAE-4616-9982-02375317986B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{361E13F9-EBAE-4616-9982-02375317986B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EAEFD577-235B-4258-8F0D-32F531301AC7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EAEFD577-235B-4258-8F0D-32F531301AC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EAEFD577-235B-4258-8F0D-32F531301AC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EAEFD577-235B-4258-8F0D-32F531301AC7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
