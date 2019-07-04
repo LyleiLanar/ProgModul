@@ -18,7 +18,7 @@ namespace RandomBetween
 
             Random rnd = new Random();
 
-            if (interA<interB)
+            if (interA < interB)
             {
                 Console.WriteLine($"A generált véletlenszám ebben az intervallumban: {rnd.Next(interA, interB)}");
             }
