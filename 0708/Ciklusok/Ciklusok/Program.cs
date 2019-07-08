@@ -71,6 +71,9 @@ namespace Ciklusok
 
             Console.ReadLine();            
 
+            // 5tel osztható kétjegyú számot            
+            //írjuk ki az összes osztóját a bekért számnak
+            // fej vagy írás n darab feldobásból
         }
     }
 }
