@@ -64,6 +64,11 @@ namespace Ciklusok
             }
             */
 
+            for (int i = 0; i <= 180; i=i+5)
+            {
+                Console.WriteLine($"Sin({i}°) = {Math.Sin(i*Math.PI/180):N4}");
+            }
+
             Console.ReadLine();            
 
         }
