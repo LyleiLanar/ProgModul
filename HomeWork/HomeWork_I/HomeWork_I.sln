@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "oszthatoHarommalEsOttel", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MikorVanHusvet", "MikorVanHusvet\MikorVanHusvet.csproj", "{50C6D7A2-60C0-4C1C-93B8-CEA03A7F656F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HusvetTanar", "HusvetTanar\HusvetTanar.csproj", "{6E137104-FD2D-4313-AB66-A72A1A64D409}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{50C6D7A2-60C0-4C1C-93B8-CEA03A7F656F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{50C6D7A2-60C0-4C1C-93B8-CEA03A7F656F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{50C6D7A2-60C0-4C1C-93B8-CEA03A7F656F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E137104-FD2D-4313-AB66-A72A1A64D409}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E137104-FD2D-4313-AB66-A72A1A64D409}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E137104-FD2D-4313-AB66-A72A1A64D409}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E137104-FD2D-4313-AB66-A72A1A64D409}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
