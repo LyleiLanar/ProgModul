@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.202
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaximumKeresés", "MaximumKeresés\MaximumKeresés.csproj", "{B07E25F3-14E2-4515-84E4-EC9D67D14236}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ÖtszötÖtösSzorótábla", "ÖtszötÖtösSzorótábla\ÖtszötÖtösSzorótábla.csproj", "{05617621-CEB6-459A-8AB6-093BEE984E77}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KettoHaromNegy", "KettoHaromNegy\KettoHaromNegy.csproj", "{647351E7-7874-4A6F-A9E7-67292B922DDD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParasztAPiacon", "ParasztAPiacon\ParasztAPiacon.csproj", "{72850C2C-4107-4185-97BC-714BEE746890}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CiklusFajták", "CiklusFajták\CiklusFajták.csproj", "{A08C9B4F-BC4E-4E44-92D4-A112F0068C9D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WhileCiklus", "WhileCiklus\WhileCiklus.csproj", "{1B0DBBA0-32F8-491E-B883-3B3461139B04}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EllenorzottAdatbevitel", "EllenorzottAdatbevitel\EllenorzottAdatbevitel.csproj", "{85EB1296-6380-4890-839A-CF1E03D47A72}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B07E25F3-14E2-4515-84E4-EC9D67D14236}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B07E25F3-14E2-4515-84E4-EC9D67D14236}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B07E25F3-14E2-4515-84E4-EC9D67D14236}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B07E25F3-14E2-4515-84E4-EC9D67D14236}.Release|Any CPU.Build.0 = Release|Any CPU
+		{05617621-CEB6-459A-8AB6-093BEE984E77}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05617621-CEB6-459A-8AB6-093BEE984E77}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05617621-CEB6-459A-8AB6-093BEE984E77}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05617621-CEB6-459A-8AB6-093BEE984E77}.Release|Any CPU.Build.0 = Release|Any CPU
+		{647351E7-7874-4A6F-A9E7-67292B922DDD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{647351E7-7874-4A6F-A9E7-67292B922DDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{647351E7-7874-4A6F-A9E7-67292B922DDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{647351E7-7874-4A6F-A9E7-67292B922DDD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72850C2C-4107-4185-97BC-714BEE746890}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72850C2C-4107-4185-97BC-714BEE746890}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72850C2C-4107-4185-97BC-714BEE746890}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72850C2C-4107-4185-97BC-714BEE746890}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A08C9B4F-BC4E-4E44-92D4-A112F0068C9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A08C9B4F-BC4E-4E44-92D4-A112F0068C9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A08C9B4F-BC4E-4E44-92D4-A112F0068C9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A08C9B4F-BC4E-4E44-92D4-A112F0068C9D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B0DBBA0-32F8-491E-B883-3B3461139B04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B0DBBA0-32F8-491E-B883-3B3461139B04}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B0DBBA0-32F8-491E-B883-3B3461139B04}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B0DBBA0-32F8-491E-B883-3B3461139B04}.Release|Any CPU.Build.0 = Release|Any CPU
+		{85EB1296-6380-4890-839A-CF1E03D47A72}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{85EB1296-6380-4890-839A-CF1E03D47A72}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{85EB1296-6380-4890-839A-CF1E03D47A72}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{85EB1296-6380-4890-839A-CF1E03D47A72}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E0820CC1-DEA2-47CD-A2BD-C97E4E34A503}
+	EndGlobalSection
+EndGlobal
