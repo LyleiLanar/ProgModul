@@ -6,6 +6,8 @@ namespace feladat_1
     {
         static void Main(string[] args)
         {
+            int[] t = { -9, 14, -6, 21 };
+
             Random rnd = new Random();
             int[] szamok = new int[10];
 
