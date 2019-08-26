@@ -7,7 +7,7 @@ namespace Feladat2
         static void Main(string[] args)
         {
             //Molnár Patrik
-            
+
             Random rnd = new Random();
             string folytatas;
             int meccsek = 0, gyozelem = 0, vereseg = 0, dontetlen = 0;
@@ -15,7 +15,7 @@ namespace Feladat2
             {
                 Console.Clear();
                 meccsek++;
-                bool sikeresValasztas = false;                
+                bool sikeresValasztas = false;
                 int jatekosFegyver;
 
                 do
@@ -109,7 +109,7 @@ namespace Feladat2
                 bool sikeresString = false;
                 do
                 {
-                    
+
                     Console.WriteLine("\nAkarsz még játszani? (i)gen/(n)em");
                     folytatas = Console.ReadLine();
 
