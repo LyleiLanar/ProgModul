@@ -7,7 +7,7 @@ namespace Feladat1
         static void Main(string[] args)
         {
             Console.WriteLine("Első feladat: ");
-            double[] tomb = { 3, 7.74, -37.5, -4, 25, -7, 375.3, -17.4, 25, 19.2 };
+            double[] tomb = { 7.74, -37.5, 6, -4, 25, -7, 375.3, -17.4, 25, 19.2 };
 
             //átlag
             double szum = 0;
@@ -55,10 +55,10 @@ namespace Feladat1
 
             //tökéletes szám
             int it = 0;
-            while (it < tomb.Length && szum == tomb[it])
+            while (it < tomb.Length && szum != tomb[it])
             {
                 szum = 0;
-                for (int j = 1; j < tomb[it] / 2; j++)
+                for (int j = 1; j <= tomb[it]; j++)
                 {
                     if (tomb[it] / j == 0)
                     {
