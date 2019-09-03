@@ -10,6 +10,11 @@ namespace PalcikasJatek
         static int actPlayer;
         static int[] playerWins;
         const int TEXTBOX = 40;
+        const ConsoleColor mainCl = ConsoleColor.DarkGreen;
+        const ConsoleColor empCl = ConsoleColor.Blue;
+        const ConsoleColor errorCl = ConsoleColor.Red;
+        const ConsoleColor headerCl = ConsoleColor.Cyan;
+        const ConsoleColor mstImportantCl = ConsoleColor.Yellow;
         enum Orientation
         {
             RIGHT, LEFT, MIDDLE
@@ -36,27 +41,36 @@ namespace PalcikasJatek
 
             } while (morePlay());
 
-            Console.Clear();
+            
+            tisztit();
             printStatistics();
 
-            Console.ReadKey();
+           Console.ReadKey();
+        }
+
+        private static void tisztit()
+        {
+            Console.Clear();
+            kiir("NORADSTICK2019\n",Orientation.MIDDLE,mstImportantCl);
+            vonal('#',headerCl);
+            Console.WriteLine();
         }
 
         private static void gameIni()
        {
-            
-            vonal('#', ConsoleColor.DarkRed);
-            kiir("Üdvözöllek a NovaStick19 játékban!\n",Orientation.MIDDLE,ConsoleColor.Red);
+
+            tisztit();
+            kiir("Üdvözöllek a NoradStick2019 játékban!\n",Orientation.MIDDLE, mainCl);
             br();
-            kiir("A cél, hogy megadott pálcikák közül az ellenfeled húzza az utolsót!!!\n", Orientation.LEFT, ConsoleColor.DarkRed);
+            kiir("A cél, hogy megadott pálcikák közül az ellenfeled húzza az utolsót!!!\n", Orientation.LEFT, mainCl);
             br();
-            kiir("SZABÁLYOK:\n", Orientation.MIDDLE, ConsoleColor.Red);
-            kiir("- Kötelező húzni!\n", Orientation.MIDDLE, ConsoleColor.DarkRed);
-            kiir("- Maximum két pálcát lehet húzni!\n", Orientation.MIDDLE, ConsoleColor.DarkRed);
+            kiir("SZABÁLYOK:\n", Orientation.MIDDLE, empCl);
+            kiir("- Kötelező húzni!\n", Orientation.MIDDLE, mainCl);
+            kiir("- Maximum két pálcát lehet húzni!\n", Orientation.MIDDLE, mainCl);
            
-            kiir("Nyomj egy gombot a kezdéshez!\n", Orientation.MIDDLE, ConsoleColor.DarkRed);            
+            kiir("Nyomj egy gombot a kezdéshez!\n", Orientation.MIDDLE, mainCl);            
             Console.ReadKey();
-            Console.Clear();
+            tisztit();
 
             players = inputPlayerNames();            
 
@@ -74,11 +88,10 @@ namespace PalcikasJatek
 
         private static void printStatistics()
         {
-            bool allEqual = true;
+            
             int k = 1;
-            while (k < playerWins.Length && allEqual)
-            {
-                allEqual = playerWins[k] == playerWins[0];
+            while (k < playerWins.Length && (playerWins[k] == playerWins[0]))
+            {                 
                 k++;
             }
             
@@ -86,30 +99,33 @@ namespace PalcikasJatek
             {
                 int max = playerWins[0];
                 int maxID = 0;
-                kiir("Az eredmény:\n",Orientation.LEFT,ConsoleColor.DarkRed);
-                kiir("| ",Orientation.LEFT,ConsoleColor.Red);
+                kiir("Az eredmény:\n",Orientation.MIDDLE, mainCl);
+
+                string eredmenyTxt = "|";
                 for (int i = 0; i < playerWins.Length; i++)
                 {
-                    kiir($"{players[i]}:{playerWins[i]} | ",Orientation.LEFT,ConsoleColor.Red);
+                    eredmenyTxt+=$"{players[i]}:{playerWins[i]}|";
                     if (max < playerWins[i])
                     {
                         max = playerWins[i];
                         maxID = i;
                     }                    
                 }
-                Console.Write("\n");               
-                kiir("Az összesített győztes: ",Orientation.LEFT,ConsoleColor.DarkRed);
+
+                kiir($"{eredmenyTxt}\n\n",Orientation.MIDDLE, mainCl);
+                              
+                kiir("És az istencsászár nem más mint, ",Orientation.LEFT, empCl);
                 
-                kiir($"{players[maxID]}\n",Orientation.LEFT,ConsoleColor.Yellow);
+                kiir($"{players[maxID]}",Orientation.LEFT,mstImportantCl);
+                kiir($"!!!\n\n", Orientation.LEFT, mainCl);
             }
             else
             {
-                Console.ForegroundColor = ConsoleColor.DarkGreen;
-                kiir("Az összesített eredmény: ",Orientation.LEFT,ConsoleColor.DarkRed);
                 
-                kiir("Döntetlen\n",Orientation.LEFT,ConsoleColor.Yellow);
+                kiir("Az összesített eredmény: ",Orientation.LEFT,mainCl);                
+                kiir("Döntetlen\n\n",Orientation.LEFT,mstImportantCl);
             }            
-            kiir("Köszönöm a játékot!",Orientation.MIDDLE,ConsoleColor.Red);
+            kiir("Köszönöm a játékot!\n\n\n",Orientation.MIDDLE,empCl);
         }
 
         private static void setStatistics(int winnerID)
@@ -122,7 +138,7 @@ namespace PalcikasJatek
             ConsoleKeyInfo inputKey;
             do
             {
-                kiir("Akartok még játszani? (I)gen/(N)em",Orientation.LEFT,ConsoleColor.DarkRed);
+                kiir("Akartok még játszani? (I)gen/(N)em",Orientation.MIDDLE,mainCl);
                 inputKey = Console.ReadKey();
 
                 switch (inputKey.KeyChar)
@@ -131,20 +147,20 @@ namespace PalcikasJatek
                         return true;
                     case 'n':
                         return false;
-                    default:                        
-                        Console.Clear();
-                        kiir("Csak i vag n karaktert adhatsz be!",Orientation.MIDDLE,ConsoleColor.Red);
+                    default:
+                        tisztit();
+                        kiir("Csak 'i' vagy 'n' karaktert üthetsz le!\n",Orientation.MIDDLE,errorCl);
                         playError();
+                        tisztit();
                         break;
                 }
-
             } while (true);
         }
 
         private static void playError()
         {
             Console.Beep(5000, 80);//C
-            vonal('!',ConsoleColor.Red);
+            vonal('!',mstImportantCl);
             System.Threading.Thread.Sleep(1000);
         }
 
@@ -165,9 +181,9 @@ namespace PalcikasJatek
 
         private static void printResult(int winnerID)
         {
-            Console.Clear();
-            kiir($"A győztes: ", Orientation.MIDDLE, ConsoleColor.DarkRed);
-            kiir($"{players[winnerID]}\n", Orientation.MIDDLE, ConsoleColor.Yellow);
+            tisztit();
+            kiir($"A győztes: \n", Orientation.MIDDLE, mainCl);
+            kiir($"{players[winnerID]}\n\n", Orientation.MIDDLE, mstImportantCl);
             
             playCow();
         }
@@ -184,7 +200,7 @@ namespace PalcikasJatek
             ConsoleKeyInfo stickNumber = new ConsoleKeyInfo();
             do
             {
-                kiir($"Vegyél el pár pálcikát, {players[actPlayer]}!\n", Orientation.MIDDLE, ConsoleColor.DarkRed);
+                kiir($"Vegyél el pár pálcikát, {players[actPlayer]}!\n", Orientation.MIDDLE, mstImportantCl);
                 stickNumber = Console.ReadKey();
 
                 if (stickNumber.KeyChar == '1' || stickNumber.KeyChar == '2')
@@ -193,8 +209,8 @@ namespace PalcikasJatek
                 }
                 else
                 {
-                    Console.Clear();                    
-                    kiir("Csak 1 vagy 2 pálcikát vehetsz el!\n",Orientation.MIDDLE,ConsoleColor.Red);
+                    tisztit();
+                    kiir("Csak 1 vagy 2 pálcikát vehetsz el!\n",Orientation.MIDDLE,empCl);
                     playError();
                     display();
                 }
@@ -217,13 +233,13 @@ namespace PalcikasJatek
 
         private static void display()
         {
-            Console.Clear();
+            tisztit();
             string sticks= "";
             for (int i = 0; i < stickCount; i++)
             {
                 sticks += "|";
             }
-            kiir($"{sticks}\n" ,Orientation.MIDDLE, ConsoleColor.Red);            
+            kiir($"{sticks}\n\n" ,Orientation.MIDDLE, empCl);            
         }
 
         private static bool hasSticks()
@@ -233,7 +249,7 @@ namespace PalcikasJatek
 
         static void matchIni()
         {
-            Console.Clear();            
+            tisztit();
             stickCount = new Random().Next(10, 13);
             actPlayer = new Random().Next(0, players.Length);
         }
@@ -244,10 +260,11 @@ namespace PalcikasJatek
 
             for (int i = 0; i < names.Length; i++)
             {               
-                kiir($"Kérlek {i + 1}. játékos add meg a neved: ",Orientation.LEFT,ConsoleColor.DarkRed);
-                                
-                names[i] = Console.ReadLine();
-                Console.Clear();
+                kiir($"Kérlek {i + 1}. játékos add meg a neved: ",Orientation.LEFT,mainCl);
+
+                Console.ForegroundColor = mstImportantCl;
+                names[i] = Console.ReadLine();                
+                tisztit();
             }
 
             return names;
