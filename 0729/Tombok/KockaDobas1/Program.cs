@@ -21,7 +21,7 @@ namespace KockaDobas1
 
                 } while (dobasokSzama < 1);
 
-                const int OLDAL = 6;
+                const int OLDAL = 10;
                 int[] dobasokTomb = new int[OLDAL + 1];//0..OLDAL
                 Random rnd = new Random();
                 for (int i = 0; i < dobasokSzama; i++)

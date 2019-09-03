@@ -12,7 +12,10 @@ namespace KockaDobas2Kockaval
         {
             const int OLDALSZAMA = 7;
             int[][] dobasok = new int[OLDALSZAMA][];//6db sor, 0..6 ->1..6
-            for (int i = 0; i < 7; i++){ dobasok[i] = new int[OLDALSZAMA]; }
+            for (int i = 0; i < 7; i++)
+            {
+                dobasok[i] = new int[OLDALSZAMA];
+            }
 
             //fejlécek:
             for (int o = 1; o < OLDALSZAMA; o++)
@@ -24,7 +27,7 @@ namespace KockaDobas2Kockaval
                 dobasok[s][0] = s;
             }
 
-            int dobasokSzama = 3000;
+            int dobasokSzama = 3000000;
             Random rnd = new Random();
 
             for (int i = 0; i < dobasokSzama; i++)
