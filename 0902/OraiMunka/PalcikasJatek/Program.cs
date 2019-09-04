@@ -123,7 +123,8 @@ namespace PalcikasJatek
                 print("DÖNTETLEN\n\n",Orientation.MIDDLE,mstImportantCl);
             }            
             print("Köszönöm a játékot!\n",Orientation.MIDDLE,mainCl);
-            print("Üss le egy gombot a bezáráshoz.\n\n", Orientation.MIDDLE, mainCl);
+            nextPlayer();
+            print($"Üss le egy {players[whichPlayerWon()]}-t a bezáráshoz...\n\n", Orientation.MIDDLE, mainCl);
         }
 
         private static void printFinalResult()
