@@ -1,0 +1,31 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ÖttelOszthatoKetjegyuSzamok
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            /*
+            for (int i = 10; i < 100; i = i + 5)
+            {
+                Console.WriteLine(i);
+            }
+            */
+
+            
+            for (int i = 10; i < 100; i++)
+            {
+                if (i % 5 ==0)
+                {
+                    Console.WriteLine(i);
+                }
+            }
+                       
+        }
+    }
+}
