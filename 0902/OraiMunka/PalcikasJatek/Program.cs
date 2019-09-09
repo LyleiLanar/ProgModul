@@ -6,11 +6,22 @@ namespace PalcikasJatek
 {
     class Program
     {
+        /*meg kell csinálni a single player verziót.
+         * 
+         * csinálni kell egy enumot, ahol beállítjuk a játékosokat
+         * kell egy menü, amiben lehet választani ellenfelet. Játékos és két fajta AI.
+         * a playerActingba meg kell valósítani egy switchben az összes ellenfél akciójának logikáját!
+         * 
+         * 
+        */
+
+
         static int stickCount;
         static string[] players;
         static int actPlayer;
         static int[] playerWins;
-        const int TEXTBOX = 40;
+        const int TEXTBOX = 40;        
+
         const ConsoleColor mainCl = ConsoleColor.DarkGreen;
         const ConsoleColor empCl = ConsoleColor.Magenta;
         const ConsoleColor errorCl = ConsoleColor.Red;
@@ -21,13 +32,19 @@ namespace PalcikasJatek
             RIGHT, LEFT, MIDDLE
         }       
 
+        enum Players
+        {
+            NOBODY, PLAYER_1, PLAYER_2, STUPID_AI, CLEVER_AI
+        }        
+
         static void Main(string[] args)
-        {           
-            gameIni();
+        {
+            gameMenu(); // itt kell megcsinálni a menüt, az ellenfélválasztással és névadással együtt.
+            gameIni(); // ezt össze kell fűzni az új gameMenu()-vel.
 
             do
             {
-                matchIni();
+               matchIni();
 
                 do
                 {
@@ -47,6 +64,24 @@ namespace PalcikasJatek
             printStatistics();
 
            Console.ReadKey();
+        }
+
+        private static int gameMenu()
+        {
+            Console.WriteLine("Választható lehetőségek: ");
+                int length = Enum.GetNames(typeof(Players)).Length;
+
+            for (int i = 2; i < length; i++)
+            {
+                Console.WriteLine($"{i}. {Enum.GetNames(typeof(Players)).GetValue(i)}");
+            }
+
+            Console.Write($"Melyik játék legyen(1.. {length}): ");
+            int e = int.Parse(Console.ReadLine());
+
+          
+
+            return e;
         }
 
         private static void clearTextBox()
