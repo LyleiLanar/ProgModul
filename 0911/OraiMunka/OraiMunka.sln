@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.202
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "gyakorlatiFeladat", "gyakorlatiFeladat\gyakorlatiFeladat.csproj", "{DFA69723-4F13-4CFA-A75F-02E7D93142E9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OopBevezeto", "OopBevezeto\OopBevezeto.csproj", "{8BD9E282-31D0-4847-8E2F-1B6C4B755F84}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DFA69723-4F13-4CFA-A75F-02E7D93142E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DFA69723-4F13-4CFA-A75F-02E7D93142E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DFA69723-4F13-4CFA-A75F-02E7D93142E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DFA69723-4F13-4CFA-A75F-02E7D93142E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8BD9E282-31D0-4847-8E2F-1B6C4B755F84}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8BD9E282-31D0-4847-8E2F-1B6C4B755F84}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8BD9E282-31D0-4847-8E2F-1B6C4B755F84}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8BD9E282-31D0-4847-8E2F-1B6C4B755F84}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {77C44F97-19DD-4BAD-8C17-CD7C1787582A}
+	EndGlobalSection
+EndGlobal
