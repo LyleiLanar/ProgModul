@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace HallgatokProgram3
+namespace HallgatokProgram4
 {
     class Hallgato
     {
