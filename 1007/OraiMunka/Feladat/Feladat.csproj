@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{908E726C-3D82-4083-93C7-6132FD60BC51}</ProjectGuid>
+    <ProjectGuid>{C903C549-6DA8-4FB9-A548-AA78F37B5213}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>HallgatokProgram4</RootNamespace>
-    <AssemblyName>HallgatokProgram4</AssemblyName>
+    <RootNamespace>Feladat</RootNamespace>
+    <AssemblyName>Feladat</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,14 +43,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Feladat.cs" />
-    <Compile Include="Hallgato.cs" />
+    <Compile Include="Jatek.cs" />
+    <Compile Include="Mezo.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="ClassDiagram1.cd" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

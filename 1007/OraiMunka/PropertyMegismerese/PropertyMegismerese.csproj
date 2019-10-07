@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{908E726C-3D82-4083-93C7-6132FD60BC51}</ProjectGuid>
+    <ProjectGuid>{A6EEA102-99AB-436F-BF1B-CDD117C73189}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>HallgatokProgram4</RootNamespace>
-    <AssemblyName>HallgatokProgram4</AssemblyName>
+    <RootNamespace>PropertyMegismerese</RootNamespace>
+    <AssemblyName>PropertyMegismerese</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,14 +43,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Feladat.cs" />
-    <Compile Include="Hallgato.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="ClassDiagram1.cd" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
