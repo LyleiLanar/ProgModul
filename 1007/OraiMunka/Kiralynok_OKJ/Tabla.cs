@@ -52,6 +52,7 @@ namespace Kiralynok_OKJ
         {
 
             Console.WriteLine(this.ToString());
+
             //for (int i = 0; i < this.T.GetLength(0); i++)
             //{
             //    for (int j = 0; j < this.T.GetLength(1); j++)

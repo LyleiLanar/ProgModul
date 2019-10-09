@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.202
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SzemelyProgram", "SzemelyProgram\SzemelyProgram.csproj", "{2EAD33B3-94BB-4073-ADA3-D6C8A9B3DB32}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sarkanyok", "Sarkanyok\Sarkanyok.csproj", "{28B651CE-8086-419C-A2EB-4563AB6F86B1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2EAD33B3-94BB-4073-ADA3-D6C8A9B3DB32}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2EAD33B3-94BB-4073-ADA3-D6C8A9B3DB32}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2EAD33B3-94BB-4073-ADA3-D6C8A9B3DB32}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2EAD33B3-94BB-4073-ADA3-D6C8A9B3DB32}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28B651CE-8086-419C-A2EB-4563AB6F86B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28B651CE-8086-419C-A2EB-4563AB6F86B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28B651CE-8086-419C-A2EB-4563AB6F86B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28B651CE-8086-419C-A2EB-4563AB6F86B1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {211599BF-B033-48F4-B868-42D8D05B20B8}
+	EndGlobalSection
+EndGlobal

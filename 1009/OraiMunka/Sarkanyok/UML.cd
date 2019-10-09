@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Sarkanyok.Allat">
+    <Position X="5.75" Y="1.5" Width="1.5" />
+    <NestedTypes>
+      <Enum Name="Sarkanyok.Allat.Nemek" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Allat.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Enum Name="Sarkanyok.Allat.Taplalkozas" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Allat.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAgAAEAAEAAAAAAAAAQAAAACAA=</HashCode>
+      <FileName>Allat.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sarkanyok.Sarkany">
+    <Position X="8" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAIAAAAAAAAAAAAAAAAAAAAgAAAA=</HashCode>
+      <FileName>Sarkany.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sarkanyok.Program">
+    <Position X="1" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sarkanyok.SarkanyMagus">
+    <Position X="10" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SarkanyMagus.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="System.Object">
+    <Position X="3.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
