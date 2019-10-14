@@ -33,7 +33,9 @@ UtodOsztaly = dinamikus típus
 virtual: a tagfügvény virtuálissá tesszük, akkor az utódé fog meghívódni.
 Ekkor lehet overrideolni a metódust az utódosztályban.
 
-virtual void kiir();
+virtual void kiir() {ki: "alakzat"}
 
 
 abstract: nem muszáj definiálni neki törzset, és az egész osztálynak abstractnak kell lennie.
+
+abstract void kiir();
