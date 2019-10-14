@@ -1,0 +1,39 @@
+Halmaz : SET
+Mindenbõl csak egyet tartalmaz.
+HashSet: nem rendezett.
+SortedSet: rendezett halmaz.
+
+Asszociatív tömb : Dictionary, 
+Kulcs - Érték
+Dictionary<string, int> : elsõ a kulcs, a második az érték.
+Dictionary: normál MAP
+SortedDictionary: rendezett MAP
+
+Ezeket az adatszerkezeteket várják el a vizsgán. Kb.
+
+Házi
+
+Ezt kellene implementálni.
+ofõnök;osztály,nevek
+
+egyszerûbb:
+osztályfõnök,osztály_jele,száma;diák;diák;diák
+Kovács Béla,a,8;Jani;Bogi,Pisti...Nóra
+
+bonyolultabb:
+osztályfõnök,kor;diak1,kor;diak2,kor;...;diakN,kor
+
+POLIMORFIZMUS, virtual, abstract
+
+OsOsztaly ref = new UtodOsztaly();
+
+OsOsztaly = statikus típus
+UtodOsztaly = dinamikus típus
+
+virtual: a tagfügvény virtuálissá tesszük, akkor az utódé fog meghívódni.
+Ekkor lehet overrideolni a metódust az utódosztályban.
+
+virtual void kiir();
+
+
+abstract: nem muszáj definiálni neki törzset, és az egész osztálynak abstractnak kell lennie.
