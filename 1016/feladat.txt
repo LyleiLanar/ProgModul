@@ -1,0 +1,11 @@
+Egy sakktáblán sakkfigurákat szeretnék elhelyezni
+1 fekete király, 1 !fekete vezér
+
+- hogyan reprezentáljuk õket?
+- honna tudjuk milyen színûek?
+- milyen a sakktábla reprezentálása
+
+több szintû öröklõdés
+absztract osztályok
+
+

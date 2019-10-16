@@ -26,6 +26,7 @@ namespace Dobokocka
                 Console.WriteLine(actKocka.ToString());
                 actKocka.Rajzol();
             }
+
         }
     }
 }
