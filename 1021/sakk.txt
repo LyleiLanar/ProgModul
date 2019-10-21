@@ -1,0 +1,55 @@
+ <<abs>>
+Babu class
+************
+szín: enum	//A babu színe
+jel: char	//A babu "Kinézete"
+------------
++ Megj(): void	//Kirajzolja a bábút
++ ToString(): Str //Visszaadja a tulajdonságait
++ B(Szin,jel)
++ Lepes(): bool //itt fogjuk ellenõrizni, hogy az adott babu tud-e lépni
+"Ha a bávú nem a táblán van, akko nem tudja a pozícióját. Mert a bábú nem tudja hol van."
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+	A			A
+	|			|
+	|			|
+	|			|
+	|			|
+Vezér class		Király class
+*************		*************
+El_e(): bool		Allapotok: Sakk, Matt, Normal
+-------------		-------------
++ Lepes():		+ Lepes():
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Tabla class
+************
+t[,] : Babu
+------------
+Megj(): void	//Kirajzolja a tablat
+Felrak(B,x,y): void	//Felrak egy babut egy tablra.
+Feltolt():void	//Feltölti babukkal a tablat.
+Mozgat(x1,y1,x2,y2): void //honnan hova, akar menni ==> Az (x,y) pár lehetne egy pont osztály!
+
+"Ide érdemes rakni a szabályokat is, hogy egy bábúval hogyan kell lépni."
+"A táblának kell eldöntenie, hogy egy adott pozíción van-e bábú, valamint a tábla fog felelni a babu levételéért."
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+Pont class
+*************
+x: int 
+y: int
+-------------
+Getterek, Setterek
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+Házi feladat
+
+Egy fájl, amnit be kell olvasni eltárolni minden sorát
+A fájl minden sora egy példány lesz
+Ezt többnyire valamelyik adatszerkezetbe kell rakni. (lista, HashSet, Dictionary)
+Ezen az adatszerkezeten progtételeket kell végrehajtani. (7 progtétel van)
+Vannak összetett T tulajdonság, ami elég vad lehet. (van-e prim korú gyerek) Itt már methodus kell! Bezony
+Ha vannak azonos adatok, akkor csak egy szerepelhet (SET adatszerkezet)
+Valamennyi stringbõl valamennyi van (Dictonary adatszerkezet) Pista 4 darab, van. pl
+Majd ezeket ki kell írni fájlba.
