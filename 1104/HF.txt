@@ -1,0 +1,3 @@
+Házi Feladat
+
+Csináljunk egy szétválogatás progtételt. Számoljuk meg, hogy mennyi Bükkvidéki és mennyi Mátrai csúcs van.
