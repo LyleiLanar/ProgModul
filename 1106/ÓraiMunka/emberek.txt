@@ -1,0 +1,7 @@
+NÉV KOR CÍM HÁZAS
+-----------------
+Péter-21-Bp
+Pál-22-Érd-false
+Petra-21-Ózd-true
+Xénia-23-Bp-true
+Balázs-21-Bp
