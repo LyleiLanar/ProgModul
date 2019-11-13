@@ -18,11 +18,27 @@ namespace MZ
         {            
             string[] adat = input.Split(';');
 
-            this.Ev = int.Parse(adat[0]);
+            if (adat[0] == "Ókor")
+            {
+                this.Ev = -1;
+            }
+            else
+            {
+                this.Ev = int.Parse(adat[0]);
+            }
+            
             this.Nev = adat[1];
             this.Vegyjel = adat[2];
             this.Rendszam = int.Parse(adat[3]);
-            this.Felfedezo =adat[4];
+            if (adat.Length==4)
+            {
+                this.Felfedezo = "Nincs adat";
+            }
+            else
+            {
+                this.Felfedezo = adat[4];
+            }
+            
         }
 
         public override string ToString()

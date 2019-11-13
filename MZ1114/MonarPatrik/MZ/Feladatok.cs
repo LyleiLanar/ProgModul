@@ -243,6 +243,7 @@ namespace MZ
             toFileText.AppendLine("Év; Elem; Vegyjel; Rendszám; Felfedező");
             Console.Write("Adj meg egy karaktert: ");
             char nev = Console.ReadKey().KeyChar;
+            
 
             foreach (Elem item in elemek)
             {
