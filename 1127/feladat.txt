@@ -1,0 +1,8 @@
+Adott egy mosoda ami ruhákat vesz be
+A ruhákat a tulajsonosuk neve azonosítja
+A ruha lehet koszos, a mosoda ezt tisztává alakítja
+
+Spec mosás is van ingekre
+De minden mosás után a színintenzitása 3%-kkal csökken ilyen mosásonként.
+
+Ennyi de ez az alapprogram
