@@ -6,3 +6,19 @@ Spec mosás is van ingekre
 De minden mosás után a színintenzitása 3%-kkal csökken ilyen mosásonként.
 
 Ennyi de ez az alapprogram
+
+----------------------------------------------------------------------------------
+
+Van egy kertészet, aki kezdetben néhány növénnyel rendelkezik
+A kertészet növényei díszfák és gyümölcsfák
+Ezeket a koruk jellemzi
+Ettõl függ az áruk
+
+Gyümölcsfáknak a termése az izgalmas
+A díszfáknak pedig, hogy van-e virága
+
+Legyenek mindenféle statisztikát kimutatni.
+A kertészet le tud égni
+Tud beszerezni növényeket és tud eladni növényeket
+
+
