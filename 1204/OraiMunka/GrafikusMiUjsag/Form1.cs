@@ -81,5 +81,22 @@ namespace GrafikusMiUjsag
             }
 
         }
+
+        private void chkB_CheckedChanged(object sender, EventArgs e)
+        {
+            chkA.Checked = !chkB.Checked;
+        }
+
+        private void tabPage2_Click(object sender, EventArgs e)
+        {
+  
+        }
+
+        private void chkA_CheckedChanged(object sender, EventArgs e)
+        {
+
+            chkB.Checked = !chkA.Checked;
+            
+        }
     }
 }

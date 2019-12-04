@@ -32,23 +32,25 @@
             this.btnOk = new System.Windows.Forms.Button();
             this.chbxHirlevel = new System.Windows.Forms.CheckBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.rBtnFfi = new System.Windows.Forms.RadioButton();
-            this.rBtnNo = new System.Windows.Forms.RadioButton();
             this.txtNemvalaszto = new System.Windows.Forms.Label();
+            this.rBtnNo = new System.Windows.Forms.RadioButton();
+            this.rBtnFfi = new System.Windows.Forms.RadioButton();
             this.tabCtrl = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.cmbBxNevek = new System.Windows.Forms.ComboBox();
             this.txtBxMain = new System.Windows.Forms.TextBox();
-            this.progBar = new System.Windows.Forms.ProgressBar();
-            this.novelo = new System.Windows.Forms.NumericUpDown();
+            this.cmbBxNevek = new System.Windows.Forms.ComboBox();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.novelo = new System.Windows.Forms.NumericUpDown();
+            this.progBar = new System.Windows.Forms.ProgressBar();
+            this.chkA = new System.Windows.Forms.CheckBox();
+            this.chkB = new System.Windows.Forms.CheckBox();
             this.panel1.SuspendLayout();
             this.tabCtrl.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.novelo)).BeginInit();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.novelo)).BeginInit();
             this.SuspendLayout();
             // 
             // txtMain
@@ -92,18 +94,14 @@
             this.panel1.Size = new System.Drawing.Size(93, 78);
             this.panel1.TabIndex = 3;
             // 
-            // rBtnFfi
+            // txtNemvalaszto
             // 
-            this.rBtnFfi.AutoSize = true;
-            this.rBtnFfi.Checked = true;
-            this.rBtnFfi.Location = new System.Drawing.Point(3, 27);
-            this.rBtnFfi.Name = "rBtnFfi";
-            this.rBtnFfi.Size = new System.Drawing.Size(36, 17);
-            this.rBtnFfi.TabIndex = 0;
-            this.rBtnFfi.TabStop = true;
-            this.rBtnFfi.Text = "Ffi";
-            this.rBtnFfi.UseVisualStyleBackColor = true;
-            this.rBtnFfi.CheckedChanged += new System.EventHandler(this.rBtnFfi_CheckedChanged);
+            this.txtNemvalaszto.AutoSize = true;
+            this.txtNemvalaszto.Location = new System.Drawing.Point(4, 8);
+            this.txtNemvalaszto.Name = "txtNemvalaszto";
+            this.txtNemvalaszto.Size = new System.Drawing.Size(32, 13);
+            this.txtNemvalaszto.TabIndex = 2;
+            this.txtNemvalaszto.Text = "Nem:";
             // 
             // rBtnNo
             // 
@@ -116,14 +114,18 @@
             this.rBtnNo.Text = "Nő";
             this.rBtnNo.UseVisualStyleBackColor = true;
             // 
-            // txtNemvalaszto
+            // rBtnFfi
             // 
-            this.txtNemvalaszto.AutoSize = true;
-            this.txtNemvalaszto.Location = new System.Drawing.Point(4, 8);
-            this.txtNemvalaszto.Name = "txtNemvalaszto";
-            this.txtNemvalaszto.Size = new System.Drawing.Size(32, 13);
-            this.txtNemvalaszto.TabIndex = 2;
-            this.txtNemvalaszto.Text = "Nem:";
+            this.rBtnFfi.AutoSize = true;
+            this.rBtnFfi.Checked = true;
+            this.rBtnFfi.Location = new System.Drawing.Point(3, 27);
+            this.rBtnFfi.Name = "rBtnFfi";
+            this.rBtnFfi.Size = new System.Drawing.Size(36, 17);
+            this.rBtnFfi.TabIndex = 0;
+            this.rBtnFfi.TabStop = true;
+            this.rBtnFfi.Text = "Ffi";
+            this.rBtnFfi.UseVisualStyleBackColor = true;
+            this.rBtnFfi.CheckedChanged += new System.EventHandler(this.rBtnFfi_CheckedChanged);
             // 
             // tabCtrl
             // 
@@ -151,16 +153,15 @@
             this.tabPage1.Text = "Alapadatok";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
-            // tabPage2
+            // txtBxMain
             // 
-            this.tabPage2.Controls.Add(this.panel2);
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(249, 137);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Egyéb";
-            this.tabPage2.UseVisualStyleBackColor = true;
+            this.txtBxMain.Location = new System.Drawing.Point(104, 67);
+            this.txtBxMain.Multiline = true;
+            this.txtBxMain.Name = "txtBxMain";
+            this.txtBxMain.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.txtBxMain.Size = new System.Drawing.Size(121, 51);
+            this.txtBxMain.TabIndex = 5;
+            this.txtBxMain.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // cmbBxNevek
             // 
@@ -173,22 +174,28 @@
             this.cmbBxNevek.SelectedIndexChanged += new System.EventHandler(this.cmbBxNevek_SelectedIndexChanged);
             this.cmbBxNevek.Click += new System.EventHandler(this.cmbBxNevek_Click);
             // 
-            // txtBxMain
+            // tabPage2
             // 
-            this.txtBxMain.Location = new System.Drawing.Point(104, 67);
-            this.txtBxMain.Multiline = true;
-            this.txtBxMain.Name = "txtBxMain";
-            this.txtBxMain.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtBxMain.Size = new System.Drawing.Size(121, 51);
-            this.txtBxMain.TabIndex = 5;
-            this.txtBxMain.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.tabPage2.Controls.Add(this.chkB);
+            this.tabPage2.Controls.Add(this.chkA);
+            this.tabPage2.Controls.Add(this.panel2);
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(249, 137);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "Egyéb";
+            this.tabPage2.UseVisualStyleBackColor = true;
+            this.tabPage2.Click += new System.EventHandler(this.tabPage2_Click);
             // 
-            // progBar
+            // panel2
             // 
-            this.progBar.Location = new System.Drawing.Point(29, 10);
-            this.progBar.Name = "progBar";
-            this.progBar.Size = new System.Drawing.Size(100, 23);
-            this.progBar.TabIndex = 0;
+            this.panel2.Controls.Add(this.novelo);
+            this.panel2.Controls.Add(this.progBar);
+            this.panel2.Location = new System.Drawing.Point(43, 12);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(160, 75);
+            this.panel2.TabIndex = 2;
             // 
             // novelo
             // 
@@ -203,14 +210,36 @@
             0});
             this.novelo.ValueChanged += new System.EventHandler(this.novelo_ValueChanged);
             // 
-            // panel2
+            // progBar
             // 
-            this.panel2.Controls.Add(this.novelo);
-            this.panel2.Controls.Add(this.progBar);
-            this.panel2.Location = new System.Drawing.Point(43, 12);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(160, 75);
-            this.panel2.TabIndex = 2;
+            this.progBar.Location = new System.Drawing.Point(29, 10);
+            this.progBar.Name = "progBar";
+            this.progBar.Size = new System.Drawing.Size(100, 23);
+            this.progBar.TabIndex = 0;
+            // 
+            // chkA
+            // 
+            this.chkA.AutoSize = true;
+            this.chkA.Checked = true;
+            this.chkA.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.chkA.Location = new System.Drawing.Point(84, 108);
+            this.chkA.Name = "chkA";
+            this.chkA.Size = new System.Drawing.Size(33, 17);
+            this.chkA.TabIndex = 3;
+            this.chkA.Text = "A";
+            this.chkA.UseVisualStyleBackColor = true;
+            this.chkA.CheckedChanged += new System.EventHandler(this.chkA_CheckedChanged);
+            // 
+            // chkB
+            // 
+            this.chkB.AutoSize = true;
+            this.chkB.Location = new System.Drawing.Point(123, 108);
+            this.chkB.Name = "chkB";
+            this.chkB.Size = new System.Drawing.Size(33, 17);
+            this.chkB.TabIndex = 4;
+            this.chkB.Text = "B";
+            this.chkB.UseVisualStyleBackColor = true;
+            this.chkB.CheckedChanged += new System.EventHandler(this.chkB_CheckedChanged);
             // 
             // Form1
             // 
@@ -226,8 +255,9 @@
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
             this.tabPage2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.novelo)).EndInit();
+            this.tabPage2.PerformLayout();
             this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.novelo)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -249,6 +279,8 @@
         private System.Windows.Forms.ProgressBar progBar;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.ComboBox cmbBxNevek;
+        private System.Windows.Forms.CheckBox chkB;
+        private System.Windows.Forms.CheckBox chkA;
     }
 }
 
