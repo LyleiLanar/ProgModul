@@ -33,43 +33,43 @@
             this.toolStripContainer1 = new System.Windows.Forms.ToolStripContainer();
             this.rtbMain = new System.Windows.Forms.RichTextBox();
             this.cnmMain = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.fileMnu = new System.Windows.Forms.ToolStripMenuItem();
-            this.fajlX1Mnu = new System.Windows.Forms.ToolStripSeparator();
-            this.fajlMentMasMnu = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripSeparator();
-            this.szerkMnu = new System.Windows.Forms.ToolStripMenuItem();
-            this.szerkX1Mnu = new System.Windows.Forms.ToolStripSeparator();
-            this.szerkX2Mnu = new System.Windows.Forms.ToolStripSeparator();
-            this.formatumMnu = new System.Windows.Forms.ToolStripMenuItem();
-            this.formatumIrasvedettMnu = new System.Windows.Forms.ToolStripMenuItem();
-            this.tsMain = new System.Windows.Forms.ToolStrip();
-            this.tsUj = new System.Windows.Forms.ToolStripLabel();
-            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
-            this.opFileDiaMegnyit = new System.Windows.Forms.OpenFileDialog();
-            this.fontDialog1 = new System.Windows.Forms.FontDialog();
             this.cmnVisszavonas = new System.Windows.Forms.ToolStripMenuItem();
             this.cmnKivagas = new System.Windows.Forms.ToolStripMenuItem();
             this.cmnMasolas = new System.Windows.Forms.ToolStripMenuItem();
             this.cmnBeillesztes = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.fileMnu = new System.Windows.Forms.ToolStripMenuItem();
             this.fajlUjMnu = new System.Windows.Forms.ToolStripMenuItem();
             this.fajlMegynitMnu = new System.Windows.Forms.ToolStripMenuItem();
+            this.fajlX1Mnu = new System.Windows.Forms.ToolStripSeparator();
             this.fajlMentMnu = new System.Windows.Forms.ToolStripMenuItem();
+            this.fajlMentMasMnu = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripSeparator();
             this.fajlKilepMnu = new System.Windows.Forms.ToolStripMenuItem();
+            this.szerkMnu = new System.Windows.Forms.ToolStripMenuItem();
             this.szerkVisszaMnu = new System.Windows.Forms.ToolStripMenuItem();
+            this.szerkX1Mnu = new System.Windows.Forms.ToolStripSeparator();
             this.szerkMasolMnu = new System.Windows.Forms.ToolStripMenuItem();
             this.szerkKivagMnu = new System.Windows.Forms.ToolStripMenuItem();
             this.szerkBeillesztMnu = new System.Windows.Forms.ToolStripMenuItem();
             this.szerkTorolMnu = new System.Windows.Forms.ToolStripMenuItem();
+            this.szerkX2Mnu = new System.Windows.Forms.ToolStripSeparator();
             this.szerkKeresMnu = new System.Windows.Forms.ToolStripMenuItem();
             this.szerkCsereMnu = new System.Windows.Forms.ToolStripMenuItem();
+            this.formatumMnu = new System.Windows.Forms.ToolStripMenuItem();
             this.formatumBetuMnu = new System.Windows.Forms.ToolStripMenuItem();
+            this.formatumIrasvedettMnu = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsMain = new System.Windows.Forms.ToolStrip();
+            this.tsUj = new System.Windows.Forms.ToolStripLabel();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.tsMent = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.tsVissza = new System.Windows.Forms.ToolStripButton();
             this.tsKivag = new System.Windows.Forms.ToolStripButton();
             this.tsBeilleszt = new System.Windows.Forms.ToolStripButton();
             this.tsTorol = new System.Windows.Forms.ToolStripButton();
+            this.opFileDiaMegnyit = new System.Windows.Forms.OpenFileDialog();
+            this.fontDialog1 = new System.Windows.Forms.FontDialog();
             this.toolStripContainer1.ContentPanel.SuspendLayout();
             this.toolStripContainer1.TopToolStripPanel.SuspendLayout();
             this.toolStripContainer1.SuspendLayout();
@@ -119,6 +119,35 @@
             this.cnmMain.Name = "cnmMain";
             this.cnmMain.Size = new System.Drawing.Size(137, 92);
             // 
+            // cmnVisszavonas
+            // 
+            this.cmnVisszavonas.Image = global::Jegyzettomb.Properties.Resources.Back_2;
+            this.cmnVisszavonas.Name = "cmnVisszavonas";
+            this.cmnVisszavonas.Size = new System.Drawing.Size(136, 22);
+            this.cmnVisszavonas.Text = "Visszavonás";
+            // 
+            // cmnKivagas
+            // 
+            this.cmnKivagas.Image = global::Jegyzettomb.Properties.Resources.Cut;
+            this.cmnKivagas.Name = "cmnKivagas";
+            this.cmnKivagas.Size = new System.Drawing.Size(136, 22);
+            this.cmnKivagas.Text = "Kivágás";
+            this.cmnKivagas.Click += new System.EventHandler(this.cmnKivagas_Click);
+            // 
+            // cmnMasolas
+            // 
+            this.cmnMasolas.Image = global::Jegyzettomb.Properties.Resources.Copy;
+            this.cmnMasolas.Name = "cmnMasolas";
+            this.cmnMasolas.Size = new System.Drawing.Size(136, 22);
+            this.cmnMasolas.Text = "Másolás";
+            // 
+            // cmnBeillesztes
+            // 
+            this.cmnBeillesztes.Image = global::Jegyzettomb.Properties.Resources.Paste;
+            this.cmnBeillesztes.Name = "cmnBeillesztes";
+            this.cmnBeillesztes.Size = new System.Drawing.Size(136, 22);
+            this.cmnBeillesztes.Text = "Beillesztás";
+            // 
             // menuStrip1
             // 
             this.menuStrip1.Dock = System.Windows.Forms.DockStyle.None;
@@ -148,22 +177,61 @@
             this.fileMnu.Text = "&File";
             this.fileMnu.Click += new System.EventHandler(this.fileMnu_Click);
             // 
+            // fajlUjMnu
+            // 
+            this.fajlUjMnu.Image = ((System.Drawing.Image)(resources.GetObject("fajlUjMnu.Image")));
+            this.fajlUjMnu.Name = "fajlUjMnu";
+            this.fajlUjMnu.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
+            this.fajlUjMnu.Size = new System.Drawing.Size(180, 22);
+            this.fajlUjMnu.Text = "Ú&j";
+            this.fajlUjMnu.ToolTipText = "Nem lesz mentve a meglévő";
+            this.fajlUjMnu.Click += new System.EventHandler(this.fajlUjMnu_Click);
+            // 
+            // fajlMegynitMnu
+            // 
+            this.fajlMegynitMnu.Image = ((System.Drawing.Image)(resources.GetObject("fajlMegynitMnu.Image")));
+            this.fajlMegynitMnu.Name = "fajlMegynitMnu";
+            this.fajlMegynitMnu.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
+            this.fajlMegynitMnu.Size = new System.Drawing.Size(180, 22);
+            this.fajlMegynitMnu.Text = "Meg&nyitás";
+            this.fajlMegynitMnu.Click += new System.EventHandler(this.fajlMegynitMnu_Click);
+            // 
             // fajlX1Mnu
             // 
             this.fajlX1Mnu.Name = "fajlX1Mnu";
-            this.fajlX1Mnu.Size = new System.Drawing.Size(169, 6);
+            this.fajlX1Mnu.Size = new System.Drawing.Size(177, 6);
+            // 
+            // fajlMentMnu
+            // 
+            this.fajlMentMnu.Enabled = false;
+            this.fajlMentMnu.Image = ((System.Drawing.Image)(resources.GetObject("fajlMentMnu.Image")));
+            this.fajlMentMnu.Name = "fajlMentMnu";
+            this.fajlMentMnu.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
+            this.fajlMentMnu.Size = new System.Drawing.Size(180, 22);
+            this.fajlMentMnu.Text = "Menté&s";
+            this.fajlMentMnu.Click += new System.EventHandler(this.fajlMentMnu_Click);
             // 
             // fajlMentMasMnu
             // 
             this.fajlMentMasMnu.Name = "fajlMentMasMnu";
-            this.fajlMentMasMnu.Size = new System.Drawing.Size(172, 22);
+            this.fajlMentMasMnu.Size = new System.Drawing.Size(180, 22);
             this.fajlMentMasMnu.Text = "Mentés másként";
             this.fajlMentMasMnu.Click += new System.EventHandler(this.fajlMentMasMnu_Click);
             // 
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(169, 6);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(177, 6);
+            // 
+            // fajlKilepMnu
+            // 
+            this.fajlKilepMnu.Image = ((System.Drawing.Image)(resources.GetObject("fajlKilepMnu.Image")));
+            this.fajlKilepMnu.Name = "fajlKilepMnu";
+            this.fajlKilepMnu.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.X)));
+            this.fajlKilepMnu.Size = new System.Drawing.Size(180, 22);
+            this.fajlKilepMnu.Text = "&Kilépés";
+            this.fajlKilepMnu.ToolTipText = "A file nem lesz elmentve";
+            this.fajlKilepMnu.Click += new System.EventHandler(this.fajlKilepMnu_Click);
             // 
             // szerkMnu
             // 
@@ -181,15 +249,76 @@
             this.szerkMnu.Size = new System.Drawing.Size(77, 20);
             this.szerkMnu.Text = "&Szerkesztés";
             // 
+            // szerkVisszaMnu
+            // 
+            this.szerkVisszaMnu.Image = ((System.Drawing.Image)(resources.GetObject("szerkVisszaMnu.Image")));
+            this.szerkVisszaMnu.Name = "szerkVisszaMnu";
+            this.szerkVisszaMnu.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Z)));
+            this.szerkVisszaMnu.Size = new System.Drawing.Size(180, 22);
+            this.szerkVisszaMnu.Text = "&Visszavonás";
+            this.szerkVisszaMnu.Click += new System.EventHandler(this.szerkVisszaMnu_Click);
+            // 
             // szerkX1Mnu
             // 
             this.szerkX1Mnu.Name = "szerkX1Mnu";
             this.szerkX1Mnu.Size = new System.Drawing.Size(177, 6);
             // 
+            // szerkMasolMnu
+            // 
+            this.szerkMasolMnu.Image = ((System.Drawing.Image)(resources.GetObject("szerkMasolMnu.Image")));
+            this.szerkMasolMnu.Name = "szerkMasolMnu";
+            this.szerkMasolMnu.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.C)));
+            this.szerkMasolMnu.Size = new System.Drawing.Size(180, 22);
+            this.szerkMasolMnu.Text = "Másolás";
+            // 
+            // szerkKivagMnu
+            // 
+            this.szerkKivagMnu.Image = ((System.Drawing.Image)(resources.GetObject("szerkKivagMnu.Image")));
+            this.szerkKivagMnu.Name = "szerkKivagMnu";
+            this.szerkKivagMnu.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.X)));
+            this.szerkKivagMnu.Size = new System.Drawing.Size(180, 22);
+            this.szerkKivagMnu.Text = "Kivágás";
+            this.szerkKivagMnu.Click += new System.EventHandler(this.szerkKivagMnu_Click);
+            // 
+            // szerkBeillesztMnu
+            // 
+            this.szerkBeillesztMnu.Image = ((System.Drawing.Image)(resources.GetObject("szerkBeillesztMnu.Image")));
+            this.szerkBeillesztMnu.Name = "szerkBeillesztMnu";
+            this.szerkBeillesztMnu.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.V)));
+            this.szerkBeillesztMnu.Size = new System.Drawing.Size(180, 22);
+            this.szerkBeillesztMnu.Text = "Beillesztés";
+            this.szerkBeillesztMnu.Click += new System.EventHandler(this.szerkBeillesztMnu_Click);
+            // 
+            // szerkTorolMnu
+            // 
+            this.szerkTorolMnu.Image = ((System.Drawing.Image)(resources.GetObject("szerkTorolMnu.Image")));
+            this.szerkTorolMnu.Name = "szerkTorolMnu";
+            this.szerkTorolMnu.ShortcutKeys = System.Windows.Forms.Keys.Delete;
+            this.szerkTorolMnu.Size = new System.Drawing.Size(180, 22);
+            this.szerkTorolMnu.Text = "Törlés";
+            // 
             // szerkX2Mnu
             // 
             this.szerkX2Mnu.Name = "szerkX2Mnu";
             this.szerkX2Mnu.Size = new System.Drawing.Size(177, 6);
+            // 
+            // szerkKeresMnu
+            // 
+            this.szerkKeresMnu.Image = ((System.Drawing.Image)(resources.GetObject("szerkKeresMnu.Image")));
+            this.szerkKeresMnu.Name = "szerkKeresMnu";
+            this.szerkKeresMnu.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.F)));
+            this.szerkKeresMnu.Size = new System.Drawing.Size(180, 22);
+            this.szerkKeresMnu.Text = "Keresés";
+            this.szerkKeresMnu.Click += new System.EventHandler(this.szerkKeresMnu_Click);
+            // 
+            // szerkCsereMnu
+            // 
+            this.szerkCsereMnu.Image = ((System.Drawing.Image)(resources.GetObject("szerkCsereMnu.Image")));
+            this.szerkCsereMnu.Name = "szerkCsereMnu";
+            this.szerkCsereMnu.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.H)));
+            this.szerkCsereMnu.Size = new System.Drawing.Size(180, 22);
+            this.szerkCsereMnu.Text = "Csere";
+            this.szerkCsereMnu.Click += new System.EventHandler(this.szerkCsereMnu_Click);
             // 
             // formatumMnu
             // 
@@ -199,6 +328,16 @@
             this.formatumMnu.Name = "formatumMnu";
             this.formatumMnu.Size = new System.Drawing.Size(75, 20);
             this.formatumMnu.Text = "Formá&tum";
+            // 
+            // formatumBetuMnu
+            // 
+            this.formatumBetuMnu.Image = ((System.Drawing.Image)(resources.GetObject("formatumBetuMnu.Image")));
+            this.formatumBetuMnu.Name = "formatumBetuMnu";
+            this.formatumBetuMnu.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
+            | System.Windows.Forms.Keys.F)));
+            this.formatumBetuMnu.Size = new System.Drawing.Size(205, 22);
+            this.formatumBetuMnu.Text = "Betűtípus...";
+            this.formatumBetuMnu.Click += new System.EventHandler(this.formatumBetuMnu_Click);
             // 
             // formatumIrasvedettMnu
             // 
@@ -235,148 +374,6 @@
             this.toolStripSeparator1.Name = "toolStripSeparator1";
             this.toolStripSeparator1.Size = new System.Drawing.Size(6, 25);
             // 
-            // toolStripSeparator3
-            // 
-            this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(6, 25);
-            // 
-            // opFileDiaMegnyit
-            // 
-            this.opFileDiaMegnyit.FileName = "openFileDialog1";
-            // 
-            // cmnVisszavonas
-            // 
-            this.cmnVisszavonas.Image = global::Jegyzettomb.Properties.Resources.Back_2;
-            this.cmnVisszavonas.Name = "cmnVisszavonas";
-            this.cmnVisszavonas.Size = new System.Drawing.Size(136, 22);
-            this.cmnVisszavonas.Text = "Visszavonás";
-            // 
-            // cmnKivagas
-            // 
-            this.cmnKivagas.Image = global::Jegyzettomb.Properties.Resources.Cut;
-            this.cmnKivagas.Name = "cmnKivagas";
-            this.cmnKivagas.Size = new System.Drawing.Size(136, 22);
-            this.cmnKivagas.Text = "Kivágás";
-            // 
-            // cmnMasolas
-            // 
-            this.cmnMasolas.Image = global::Jegyzettomb.Properties.Resources.Copy;
-            this.cmnMasolas.Name = "cmnMasolas";
-            this.cmnMasolas.Size = new System.Drawing.Size(136, 22);
-            this.cmnMasolas.Text = "Másolás";
-            // 
-            // cmnBeillesztes
-            // 
-            this.cmnBeillesztes.Image = global::Jegyzettomb.Properties.Resources.Paste;
-            this.cmnBeillesztes.Name = "cmnBeillesztes";
-            this.cmnBeillesztes.Size = new System.Drawing.Size(136, 22);
-            this.cmnBeillesztes.Text = "Beillesztás";
-            // 
-            // fajlUjMnu
-            // 
-            this.fajlUjMnu.Image = ((System.Drawing.Image)(resources.GetObject("fajlUjMnu.Image")));
-            this.fajlUjMnu.Name = "fajlUjMnu";
-            this.fajlUjMnu.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
-            this.fajlUjMnu.Size = new System.Drawing.Size(172, 22);
-            this.fajlUjMnu.Text = "Ú&j";
-            this.fajlUjMnu.ToolTipText = "Nem lesz mentve a meglévő";
-            this.fajlUjMnu.Click += new System.EventHandler(this.fajlUjMnu_Click);
-            // 
-            // fajlMegynitMnu
-            // 
-            this.fajlMegynitMnu.Image = ((System.Drawing.Image)(resources.GetObject("fajlMegynitMnu.Image")));
-            this.fajlMegynitMnu.Name = "fajlMegynitMnu";
-            this.fajlMegynitMnu.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
-            this.fajlMegynitMnu.Size = new System.Drawing.Size(172, 22);
-            this.fajlMegynitMnu.Text = "Meg&nyitás";
-            this.fajlMegynitMnu.Click += new System.EventHandler(this.fajlMegynitMnu_Click);
-            // 
-            // fajlMentMnu
-            // 
-            this.fajlMentMnu.Image = ((System.Drawing.Image)(resources.GetObject("fajlMentMnu.Image")));
-            this.fajlMentMnu.Name = "fajlMentMnu";
-            this.fajlMentMnu.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
-            this.fajlMentMnu.Size = new System.Drawing.Size(172, 22);
-            this.fajlMentMnu.Text = "Menté&s";
-            // 
-            // fajlKilepMnu
-            // 
-            this.fajlKilepMnu.Image = ((System.Drawing.Image)(resources.GetObject("fajlKilepMnu.Image")));
-            this.fajlKilepMnu.Name = "fajlKilepMnu";
-            this.fajlKilepMnu.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.X)));
-            this.fajlKilepMnu.Size = new System.Drawing.Size(172, 22);
-            this.fajlKilepMnu.Text = "&Kilépés";
-            this.fajlKilepMnu.ToolTipText = "A file nem lesz elmentve";
-            this.fajlKilepMnu.Click += new System.EventHandler(this.fajlKilepMnu_Click);
-            // 
-            // szerkVisszaMnu
-            // 
-            this.szerkVisszaMnu.Image = ((System.Drawing.Image)(resources.GetObject("szerkVisszaMnu.Image")));
-            this.szerkVisszaMnu.Name = "szerkVisszaMnu";
-            this.szerkVisszaMnu.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Z)));
-            this.szerkVisszaMnu.Size = new System.Drawing.Size(180, 22);
-            this.szerkVisszaMnu.Text = "&Visszavonás";
-            // 
-            // szerkMasolMnu
-            // 
-            this.szerkMasolMnu.Image = ((System.Drawing.Image)(resources.GetObject("szerkMasolMnu.Image")));
-            this.szerkMasolMnu.Name = "szerkMasolMnu";
-            this.szerkMasolMnu.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.C)));
-            this.szerkMasolMnu.Size = new System.Drawing.Size(180, 22);
-            this.szerkMasolMnu.Text = "Másolás";
-            // 
-            // szerkKivagMnu
-            // 
-            this.szerkKivagMnu.Image = ((System.Drawing.Image)(resources.GetObject("szerkKivagMnu.Image")));
-            this.szerkKivagMnu.Name = "szerkKivagMnu";
-            this.szerkKivagMnu.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.X)));
-            this.szerkKivagMnu.Size = new System.Drawing.Size(180, 22);
-            this.szerkKivagMnu.Text = "Kivágás";
-            // 
-            // szerkBeillesztMnu
-            // 
-            this.szerkBeillesztMnu.Image = ((System.Drawing.Image)(resources.GetObject("szerkBeillesztMnu.Image")));
-            this.szerkBeillesztMnu.Name = "szerkBeillesztMnu";
-            this.szerkBeillesztMnu.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.V)));
-            this.szerkBeillesztMnu.Size = new System.Drawing.Size(180, 22);
-            this.szerkBeillesztMnu.Text = "Beillesztés";
-            // 
-            // szerkTorolMnu
-            // 
-            this.szerkTorolMnu.Image = ((System.Drawing.Image)(resources.GetObject("szerkTorolMnu.Image")));
-            this.szerkTorolMnu.Name = "szerkTorolMnu";
-            this.szerkTorolMnu.ShortcutKeys = System.Windows.Forms.Keys.Delete;
-            this.szerkTorolMnu.Size = new System.Drawing.Size(180, 22);
-            this.szerkTorolMnu.Text = "Törlés";
-            // 
-            // szerkKeresMnu
-            // 
-            this.szerkKeresMnu.Image = ((System.Drawing.Image)(resources.GetObject("szerkKeresMnu.Image")));
-            this.szerkKeresMnu.Name = "szerkKeresMnu";
-            this.szerkKeresMnu.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.F)));
-            this.szerkKeresMnu.Size = new System.Drawing.Size(180, 22);
-            this.szerkKeresMnu.Text = "Keresés";
-            this.szerkKeresMnu.Click += new System.EventHandler(this.szerkKeresMnu_Click);
-            // 
-            // szerkCsereMnu
-            // 
-            this.szerkCsereMnu.Image = ((System.Drawing.Image)(resources.GetObject("szerkCsereMnu.Image")));
-            this.szerkCsereMnu.Name = "szerkCsereMnu";
-            this.szerkCsereMnu.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.H)));
-            this.szerkCsereMnu.Size = new System.Drawing.Size(180, 22);
-            this.szerkCsereMnu.Text = "Csere";
-            this.szerkCsereMnu.Click += new System.EventHandler(this.szerkCsereMnu_Click);
-            // 
-            // formatumBetuMnu
-            // 
-            this.formatumBetuMnu.Image = ((System.Drawing.Image)(resources.GetObject("formatumBetuMnu.Image")));
-            this.formatumBetuMnu.Name = "formatumBetuMnu";
-            this.formatumBetuMnu.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
-            | System.Windows.Forms.Keys.F)));
-            this.formatumBetuMnu.Size = new System.Drawing.Size(205, 22);
-            this.formatumBetuMnu.Text = "Betűtípus...";
-            this.formatumBetuMnu.Click += new System.EventHandler(this.formatumBetuMnu_Click);
-            // 
             // tsMent
             // 
             this.tsMent.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
@@ -386,6 +383,11 @@
             this.tsMent.Size = new System.Drawing.Size(23, 22);
             this.tsMent.Text = "toolStripButton2";
             this.tsMent.ToolTipText = "Ment";
+            // 
+            // toolStripSeparator3
+            // 
+            this.toolStripSeparator3.Name = "toolStripSeparator3";
+            this.toolStripSeparator3.Size = new System.Drawing.Size(6, 25);
             // 
             // tsVissza
             // 
@@ -404,6 +406,7 @@
             this.tsKivag.Name = "tsKivag";
             this.tsKivag.Size = new System.Drawing.Size(23, 22);
             this.tsKivag.Text = "toolStripButton3";
+            this.tsKivag.Click += new System.EventHandler(this.tsKivag_Click);
             // 
             // tsBeilleszt
             // 
@@ -423,6 +426,10 @@
             this.tsTorol.Size = new System.Drawing.Size(23, 22);
             this.tsTorol.Text = "toolStripButton5";
             // 
+            // opFileDiaMegnyit
+            // 
+            this.opFileDiaMegnyit.FileName = "openFileDialog1";
+            // 
             // FoFrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -432,6 +439,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FoFrm";
             this.Text = "Jegyzettömb";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FoFrm_FormClosing);
             this.toolStripContainer1.ContentPanel.ResumeLayout(false);
             this.toolStripContainer1.TopToolStripPanel.ResumeLayout(false);
             this.toolStripContainer1.TopToolStripPanel.PerformLayout();

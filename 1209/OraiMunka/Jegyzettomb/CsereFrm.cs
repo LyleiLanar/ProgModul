@@ -21,5 +21,10 @@ namespace Jegyzettomb
         {
             this.Close();
         }
+
+        private void CsereFrm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+           
+        }
     }
 }

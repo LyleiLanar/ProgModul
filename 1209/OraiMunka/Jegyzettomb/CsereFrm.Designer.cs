@@ -80,6 +80,7 @@
             this.Controls.Add(this.cserelLbl);
             this.Name = "CsereFrm";
             this.Text = "Csere";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.CsereFrm_FormClosing);
             this.ResumeLayout(false);
             this.PerformLayout();
 
