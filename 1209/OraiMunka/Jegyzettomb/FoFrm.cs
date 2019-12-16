@@ -1,12 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Jegyzettomb
@@ -28,7 +20,7 @@ namespace Jegyzettomb
         }
         private void fajlKilepMnu_Click(object sender, EventArgs e)
         {
-            Application.Exit();            
+            Application.Exit();
         }
         private void fajlUjMnu_Click(object sender, EventArgs e)
         {
@@ -36,21 +28,21 @@ namespace Jegyzettomb
         }
         private void fajlMegynitMnu_Click(object sender, EventArgs e)
         {
-            
+
 
             if (opFileDiaMegnyit.ShowDialog() == DialogResult.OK)
             {
                 string fn = opFileDiaMegnyit.FileName;
 
-                if (fn.EndsWith(".txt")) 
+                if (fn.EndsWith(".txt"))
                 {
                     rtbMain.LoadFile(opFileDiaMegnyit.FileName, RichTextBoxStreamType.PlainText);
                 }
-                
+
             }
-            
+
         }
-        
+
         private string fnev = "";
         private void fajlMentMasMnu_Click(object sender, EventArgs e)
         {
@@ -59,16 +51,16 @@ namespace Jegyzettomb
             mentesSFD.FilterIndex = 0;
 
             if (mentesSFD.ShowDialog() == DialogResult.OK)
-            {               
+            {
                 fnev = mentesSFD.FileName;
                 Text = fnev;
                 fajlMentMnu.Enabled = true;
-                rtbMain.SaveFile(fnev,RichTextBoxStreamType.PlainText);
-            }            
+                rtbMain.SaveFile(fnev, RichTextBoxStreamType.PlainText);
+            }
         }
         private void fajlMentMnu_Click(object sender, EventArgs e)
         {
-            if (fnev!="")
+            if (fnev != "")
             {
                 rtbMain.SaveFile(fnev);
             }
@@ -76,25 +68,28 @@ namespace Jegyzettomb
 
         /*CONTEXT MENU*/
 
-
-
         /*GOMBOK*/
-
-
-
 
         private void formatumBetuMnu_Click(object sender, EventArgs e)
         {
             FontDialog fontDialog = new FontDialog();
             if (fontDialog.ShowDialog() == DialogResult.OK)
             {
-                rtbMain.Font = fontDialog.Font;   
+                rtbMain.Font = fontDialog.Font;
             }
-            
+
         }
 
         private void formatumIrasvedettMnu_Click(object sender, EventArgs e)
         {
+            if (formatumIrasvedettMnu.Checked==true)
+            {
+                rtbMain.ReadOnly = false;
+            }
+            else
+            {
+                rtbMain.ReadOnly = true;
+            }
             formatumIrasvedettMnu.Checked = !formatumIrasvedettMnu.Checked;
         }
 
@@ -105,12 +100,23 @@ namespace Jegyzettomb
 
         private void szerkCsereMnu_Click(object sender, EventArgs e)
         {
-            new CsereFrm().Show();
+            CsereFrm csereFrm = new CsereFrm();
+
+            if (csereFrm.ShowDialog() == DialogResult.OK)
+            {
+                string mit = csereFrm.txtbMitCsere.Text;
+                string mire = csereFrm.txtbMireCsere.Text;
+                rtbMain.Text = rtbMain.Text.Replace(mit, mire);
+
+
+
+
+            }
         }
 
         private void FoFrm_FormClosing(object sender, FormClosingEventArgs e)
         {
-            if (MessageBox.Show("Biztos bezárod ezt a fost?","Warning",MessageBoxButtons.YesNo,MessageBoxIcon.Warning) == DialogResult.No)
+            if (MessageBox.Show("Biztos bezárod ezt a fost?", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.No)
             {
                 e.Cancel = true;
             }
@@ -118,7 +124,7 @@ namespace Jegyzettomb
 
         private void tsKivag_Click(object sender, EventArgs e)
         {
-            this.szerkKivagMnu_Click(sender,e);
+            this.szerkKivagMnu_Click(sender, e);
         }
 
         private void szerkKivagMnu_Click(object sender, EventArgs e)
@@ -139,7 +145,7 @@ namespace Jegyzettomb
             if (Clipboard.GetDataObject().GetDataPresent(DataFormats.Text))
             {
                 rtbMain.Paste();
-            }            
+            }
         }
 
         private void szerkVisszaMnu_Click(object sender, EventArgs e)

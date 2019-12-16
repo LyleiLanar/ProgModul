@@ -1,0 +1,5 @@
+Normálformára kell hozni a DB-t
+
+0. NF: bele van zsúfolva egy táblázatba minden logikailag összefüggõ adatok.
+1. NF: van hozzáadva egy elsõdleges kulcs, ne legyen két hasonló tartalmú oszlop (pl. képzettség1, képzettség2)
+2. NF: 
