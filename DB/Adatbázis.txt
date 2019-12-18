@@ -2,4 +2,15 @@ Normálformára kell hozni a DB-t
 
 0. NF: bele van zsúfolva egy táblázatba minden logikailag összefüggõ adatok.
 1. NF: van hozzáadva egy elsõdleges kulcs, ne legyen két hasonló tartalmú oszlop (pl. képzettség1, képzettség2)
-2. NF: 
+2. NF: 1NF-ben van, valamint az olyan oszlopok, ahol ismétlõdés lehet legyen külön táblába kiszervezve, egy cellában csak egy adat legyen.
+3. NF: Belekerül az egyik tábla elsõdleges kulcsa idegenkulcsként.(foreignkey)
+
+A kapcsolótábla összetett kulcsú, és ezek idegenkulcsokból állnak.
+
+VEVO{vid*, nev, cím}
+
+SZAMLA{szid*, VEVO.vid, kelt, hatarido}
+
+TERMEK{tid*, termnev, egysegar}
+
+TETEL{SZAMLA.szid, TERMEK.tid, menny}
