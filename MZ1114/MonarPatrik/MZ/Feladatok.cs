@@ -8,11 +8,11 @@ namespace MZ
     static class Feladatok
     {
         static Elem[] elemek;
-        static string path = "vegyjelek1.csv";
+        static string path = "vegyjelek.txt";
 
         static Feladatok()
         {
-            string[] elemekInput = File.ReadAllLines(path, Encoding.Default);
+            string[] elemekInput = File.ReadAllLines(path, Encoding.UTF8);
 
             elemek = new Elem[elemekInput.Length - 1];
             //itt egytől indulunk, hogy a fejléc ne kerüljön bele az elemekbe.
