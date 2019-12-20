@@ -237,7 +237,7 @@ namespace NoradCalculator
                 case Operator.none:
                     result = operand1;
                     break;
-
+                     
                 default:
                     result = "0";
                     break;
