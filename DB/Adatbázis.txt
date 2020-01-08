@@ -14,3 +14,5 @@ SZAMLA{szid*, VEVO.vid, kelt, hatarido}
 TERMEK{tid*, termnev, egysegar}
 
 TETEL{SZAMLA.szid, TERMEK.tid, menny}
+
+2020.01.06
