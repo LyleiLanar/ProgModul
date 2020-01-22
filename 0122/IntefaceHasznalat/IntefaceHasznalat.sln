@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29609.76
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PeldaEGy", "PeldaEGy\PeldaEGy.csproj", "{FF604BC9-AEAB-44CE-A81D-2FA21B842D93}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bankosdi", "Bankosdi\Bankosdi.csproj", "{95A0B599-7170-4411-90B7-7AD135FA76CD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FF604BC9-AEAB-44CE-A81D-2FA21B842D93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF604BC9-AEAB-44CE-A81D-2FA21B842D93}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF604BC9-AEAB-44CE-A81D-2FA21B842D93}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF604BC9-AEAB-44CE-A81D-2FA21B842D93}.Release|Any CPU.Build.0 = Release|Any CPU
+		{95A0B599-7170-4411-90B7-7AD135FA76CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95A0B599-7170-4411-90B7-7AD135FA76CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95A0B599-7170-4411-90B7-7AD135FA76CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95A0B599-7170-4411-90B7-7AD135FA76CD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {91D79316-9873-4273-BDEE-5AD011A6C68A}
+	EndGlobalSection
+EndGlobal
