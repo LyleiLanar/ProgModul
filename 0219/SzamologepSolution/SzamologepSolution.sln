@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29609.76
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Szamologep", "Szamologep\Szamologep.csproj", "{928FCAFA-5469-4325-9F1F-621FA5301CE6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HaromszogProgram", "HaromszogProgram\HaromszogProgram.csproj", "{13880075-6FB2-4AC8-A196-FFC969E4F3E5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HaromszogProgramTests", "HaromszogProgramTests\HaromszogProgramTests.csproj", "{5C7F3D14-487E-458F-8D29-236EA5EB6009}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +13,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{928FCAFA-5469-4325-9F1F-621FA5301CE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{928FCAFA-5469-4325-9F1F-621FA5301CE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{928FCAFA-5469-4325-9F1F-621FA5301CE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{928FCAFA-5469-4325-9F1F-621FA5301CE6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{13880075-6FB2-4AC8-A196-FFC969E4F3E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13880075-6FB2-4AC8-A196-FFC969E4F3E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13880075-6FB2-4AC8-A196-FFC969E4F3E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13880075-6FB2-4AC8-A196-FFC969E4F3E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C7F3D14-487E-458F-8D29-236EA5EB6009}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C7F3D14-487E-458F-8D29-236EA5EB6009}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C7F3D14-487E-458F-8D29-236EA5EB6009}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C7F3D14-487E-458F-8D29-236EA5EB6009}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -4,18 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Szamologep
+namespace Haromszog
 {
-
-    public class Program
+    class Program
     {
         static void Main(string[] args)
         {
-        }
-
-        public double osszeadas(string s1, string s2)
-        {
-            return 0;
         }
     }
 }
